@@ -18,77 +18,75 @@
     .instagram-cta { margin: 1.5rem 0; }
     .instagram-link { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); 
                      color: white; padding: 1rem 2rem; border-radius: 25px; text-decoration: none; 
-                     font-weight: bold; display: inline-block; }
+                     font-weight: bold; display: inline-block; transition: transform 0.3s ease; }
+    .instagram-link:hover { transform: scale(1.05); }
     
-    .hero-actions { margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; }
-    .cta-btn, .cta-btn-whatsapp { padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    .hero-actions { margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .cta-btn, .cta-btn-whatsapp { padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease; }
     .cta-btn { background: #008751; color: white; }
+    .cta-btn:hover { background: #006641; transform: translateY(-2px); }
     .cta-btn-whatsapp { background: #25D366; color: white; }
+    .cta-btn-whatsapp:hover { background: #1DA851; transform: translateY(-2px); }
+    .cta-btn-whatsapp.large { padding: 1.2rem 2.5rem; font-size: 1.1rem; }
     
-    /* QR Codes Section */
-    .qr-codes-section { background: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .qr-codes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
-    .qr-code-item { background: #f8f9fa; padding: 1.5rem; border-radius: 10px; }
-    .qr-code-image { width: 120px; height: 120px; object-fit: contain; margin-bottom: 1rem; }
-    .download-btn { background: #008751; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; font-size: 0.9rem; }
-    .qr-instructions { background: #e8f5e8; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem; text-align: left; }
-    .qr-instructions ul { list-style: none; padding: 0; }
-    .qr-instructions li { margin: 0.5rem 0; padding-left: 1.5rem; }
+    /* Custom Cakes Section */
+    .custom-cakes-section { background: white; padding: 3rem 2rem; border-radius: 15px; margin: 3rem 0; text-align: center; }
+    .custom-cakes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
+    .cake-type { background: #f8f9fa; padding: 2rem; border-radius: 10px; text-align: center; }
+    .cake-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .cake-type h3 { color: #008751; margin-bottom: 1rem; }
+    
+    .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin: 2rem 0; }
+    .step { text-align: center; }
+    .step-number { background: #008751; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold; }
+    .step h4 { color: #333; margin-bottom: 0.5rem; }
+    
+    .pricing-note { background: #fff3cd; border: 1px solid #ffeaa7; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; text-align: left; }
+    .cta-cakes { margin-top: 2rem; }
+    .cta-note { margin-top: 1rem; color: #666; font-size: 0.9rem; }
     
     .products-section { margin: 3rem 0; }
     .section-subtitle { text-align: center; color: #666; margin-bottom: 2rem; }
     
     .products-grid { display: grid; gap: 2rem; }
-    .product-item { background: white; padding: 1.5rem; border-radius: 10px; display: flex; gap: 1.5rem; align-items: center; }
+    .product-item { background: white; padding: 1.5rem; border-radius: 10px; display: flex; gap: 1.5rem; align-items: center; transition: transform 0.3s ease; }
+    .product-item:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
     .product-thumbnail { width: 120px; height: 120px; object-fit: cover; border-radius: 8px; }
     .product-info { flex: 1; }
     .price { font-size: 1.5rem; color: #008751; font-weight: bold; margin: 0.5rem 0; }
     .actions { display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; }
-    .view-btn, .whatsapp-btn-small, .qr-btn { padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; color: white; font-size: 0.9rem; }
+    .view-btn, .whatsapp-btn-small, .qr-btn { padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; color: white; font-size: 0.9rem; transition: all 0.3s ease; }
     .view-btn { background: #008751; }
+    .view-btn:hover { background: #006641; }
     .whatsapp-btn-small { background: #25D366; }
+    .whatsapp-btn-small:hover { background: #1DA851; }
     .qr-btn { background: #E1306C; }
+    .qr-btn:hover { background: #C13584; }
     
-    .product-card { background: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; }
-    .product-header { text-align: center; margin-bottom: 2rem; }
-    .product-header h1 { font-size: 2rem; color: #333; margin-bottom: 1rem; }
-    .qr-download { margin-top: 1rem; }
-    .qr-download-btn { background: #E1306C; color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; }
-    .product-image { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 1.5rem; }
+    /* QR Codes Section */
+    .qr-codes-section { background: white; padding: 2rem; border-radius: 10px; margin: 3rem 0; text-align: center; }
+    .qr-codes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .qr-code-item { background: #f8f9fa; padding: 1.5rem; border-radius: 10px; }
+    .qr-code-image { width: 120px; height: 120px; object-fit: contain; margin-bottom: 1rem; }
+    .download-btn { background: #008751; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; font-size: 0.9rem; transition: all 0.3s ease; }
+    .download-btn:hover { background: #006641; }
+    .qr-note { font-size: 0.8rem; color: #666; margin: 0.5rem 0; }
+    .qr-instructions { background: #e8f5e8; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem; text-align: left; }
+    .qr-instructions ul { list-style: none; padding: 0; }
+    .qr-instructions li { margin: 0.5rem 0; padding-left: 1.5rem; }
     
-    .action-buttons { display: flex; gap: 1rem; margin: 2rem 0; justify-content: center; }
-    .whatsapp-btn, .call-btn { padding: 1rem 2rem; border-radius: 5px; text-decoration: none; color: white; font-weight: bold; }
-    .whatsapp-btn { background: #25D366; }
-    .call-btn { background: #008751; }
+    /* Contact Page Styles */
+    .business-address { color: #666; margin-bottom: 1rem; }
+    .contact-number { font-weight: bold; color: #333; margin: 0.5rem 0; }
+    .contact-btn.instagram { background: linear-gradient(45deg, #405DE6, #E1306C); color: white; }
+    .contact-btn.instagram:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(224, 58, 132, 0.4); }
     
-    .instagram-promo { text-align: center; margin: 1.5rem 0; }
-    .instagram-promo-btn { background: linear-gradient(45deg, #405DE6, #E1306C); color: white; padding: 1rem 2rem; 
-                          border-radius: 25px; text-decoration: none; font-weight: bold; }
+    .business-hours-contact { background: white; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }
+    .hours-grid { display: grid; grid-template-columns: auto auto; gap: 1rem; margin-top: 1rem; }
+    .contact-notes { display: grid; gap: 1.5rem; margin: 2rem 0; }
+    .note { background: #f8f9fa; padding: 1.5rem; border-radius: 8px; }
     
-    .business-info { background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
-    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .info-item { background: white; padding: 1rem; border-radius: 5px; }
-    
-    .other-products { margin: 3rem 0; }
-    .products-scroll { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-    .other-product { background: white; padding: 1rem; border-radius: 8px; text-decoration: none; color: #333; text-align: center; }
-    .other-product img { width: 100px; height: 100px; object-fit: cover; border-radius: 5px; margin-bottom: 0.5rem; }
-    
-    .page-header { text-align: center; padding: 2rem; background: white; border-radius: 10px; margin-bottom: 2rem; }
-    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0; }
-    .contact-method { background: white; padding: 2rem; border-radius: 10px; text-align: center; }
-    .contact-icon { font-size: 3rem; margin-bottom: 1rem; }
-    .contact-btn { display: inline-block; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; color: white; margin-top: 1rem; }
-    .contact-btn.whatsapp { background: #25D366; }
-    .contact-btn.call { background: #008751; }
-    
-    .about-content { background: white; padding: 2rem; border-radius: 10px; }
-    .business-details { background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
-    
-    .main-footer { background: #333; color: white; padding: 2rem 0; margin-top: 3rem; }
-    .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; padding: 0 1rem; }
-    .footer-section a { display: block; color: #ccc; text-decoration: none; margin: 0.5rem 0; }
-    .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid #444; margin-top: 2rem; }
+    /* Keep the rest of your existing styles... */
     
     @media (max-width: 768px) {
         .product-item { flex-direction: column; text-align: center; }
@@ -96,5 +94,7 @@
         .nav-container { flex-direction: column; gap: 1rem; }
         .qr-codes-grid { grid-template-columns: repeat(2, 1fr); }
         .actions { justify-content: center; }
+        .custom-cakes-grid, .process-steps { grid-template-columns: 1fr; }
+        .hours-grid { grid-template-columns: 1fr; }
     }
     
